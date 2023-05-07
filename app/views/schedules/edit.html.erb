@@ -1,6 +1,10 @@
 <div class="schedule-create-container">   
   <h1>予定を編集してください</h1>
 
+  <% if flash[:alert] %>
+    <p class="alert"><%= flash[:alert] %></p>
+  <% end %>
+
   <%= render "shared/error", obj: @schedule %>
 
   <%= form_with model: @schedule, local: true do |f| %>
