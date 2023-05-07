@@ -19,7 +19,17 @@ table td {
   background-color: #afeeee;
   padding: 5px;
   font-size: 20px;
+  border-radius: 5px;
 } 
+
+.alert {
+  width: fit-content;
+  background-color: #ff4949;
+  padding: 5px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 5px;
+}
 
 .main-title {
   display: flex;

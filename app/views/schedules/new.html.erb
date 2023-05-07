@@ -1,6 +1,10 @@
 <div class="schedule-create-container">
   <h1>予定の新規追加</h1>
 
+  <% flash.each do |message_type, message| %>
+    <p class="alert"><%= message %></p>
+  <% end %>
+  
   <%= render "shared/error", obj: @schedule %>
 
   <%= form_with model: @schedule, local: true do |f| %>
