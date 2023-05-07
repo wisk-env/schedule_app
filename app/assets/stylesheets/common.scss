@@ -50,8 +50,33 @@ table td {
   max-width: 1080px;
 }
 
+.form-container-button {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding-top: 10px;
+}
+
+.title-input-area {
+  width: 400px;
+  height: 40px;
+  font-size: 20px;  
+}
+
+.schedule-memo-area {
+  width: 400px;
+  height: 300px;
+  font-size: 20px;
+}
+
 .schedule-details-container {
   margin: 0 auto;
   width: 100%;
   max-width: 500px;  
+}
+
+.schedule-create-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 700px;   
 }
