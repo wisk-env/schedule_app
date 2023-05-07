@@ -1,24 +1,28 @@
-<h1>スケジュール詳細</h1>
+<div class="schedule-details-container">
+  <h1>スケジュール詳細</h1>
+  
+  <%= link_to "← 一覧に戻る", schedules_path %>
+  <div class="main-title">
+    <h2 class="schedule-title"><%= "タイトル : " + @schedule.title %></h2>
+    <%= link_to "編集", edit_schedule_path(@schedule) %>
+  </div>
 
-<%= link_to "← 一覧に戻る", schedules_path %>
-<h2 class="schedule-title"><%= "タイトル : " + @schedule.title %></h2>
-<%= link_to "編集", edit_schedule_path(@schedule) %>
-
-<table>
-  <tr>
-    <th>開始日</th>
-    <td><%= @schedule.start_date.strftime("%Y/%m/%d") %></td>
-  </tr>
-  <tr>
-    <th>終了日</th>
-    <td><%= @schedule.end_date.strftime("%Y/%m/%d") %></td>
-  </tr>
-  <tr>
-    <th>終日</th>
-    <td><%= @schedule.all_day ? "◯" : "" %></td>
-  </tr>
-  <tr>
-    <th>スケジュールメモ</th>
-    <td><%= @schedule.memo %></td>
-  </tr>
-</table>
+    <table>
+    <tr>
+        <th>開始日</th>
+        <td><%= @schedule.start_date.strftime("%Y/%m/%d") %></td>
+    </tr>
+    <tr>
+        <th>終了日</th>
+        <td><%= @schedule.end_date.strftime("%Y/%m/%d") %></td>
+    </tr>
+    <tr>
+        <th>終日</th>
+        <td><%= @schedule.all_day ? "◯" : "" %></td>
+    </tr>
+    <tr>
+        <th>スケジュールメモ</th>
+        <td><%= @schedule.memo %></td>
+    </tr>
+    </table>
+</div>
