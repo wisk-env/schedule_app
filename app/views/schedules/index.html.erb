@@ -1,5 +1,9 @@
 <h1>予定一覧</h1>
 
+<% if flash[:notice] %>
+  <p class="notice"><%= flash[:notice] %></p>
+<% end %>
+
 <table>
   <thead>
     <tr>
