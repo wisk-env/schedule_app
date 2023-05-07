@@ -1,7 +1,9 @@
 <div class="schedule-create-container">   
   <h1>予定を編集してください</h1>
 
-  <%= form_with model: @schedule do |f| %>
+  <%= render "shared/error", obj: @schedule %>
+
+  <%= form_with model: @schedule, local: true do |f| %>
     <table>
       <tr>
         <th><%= f.label :title, "タイトル" %></th>
