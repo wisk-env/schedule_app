@@ -15,6 +15,7 @@
       <th>更新日時</th>
       <th></th>
       <th></th>
+      <th></th>
     </tr>
   </thead>
 
@@ -32,6 +33,9 @@
         </td>
         <td>
           <%= link_to "編集", edit_schedule_path(schedule) %>
+        </td>
+        <td>
+          <%= link_to "削除", schedule_path(schedule), method: :delete, data: { confirm: "本当に削除しますか？" } %>
         </td>
       </tr>
     <% end %>
