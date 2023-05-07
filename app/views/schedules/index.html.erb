@@ -33,13 +33,13 @@
           <td><%= schedule.all_day ? "◯" : "" %></td>
           <td><%= schedule.updated_at.strftime("%Y/%m/%d %H:%M") %></td>
           <td>
-            <%= link_to "詳細", schedule_path(schedule) %>
+            <%= link_to "詳細", schedule_path(schedule), class: "non-decoration" %>
           </td>
           <td>
-            <%= link_to "編集", edit_schedule_path(schedule) %>
+            <%= link_to "編集", edit_schedule_path(schedule), class: "non-decoration" %>
           </td>
           <td>
-            <%= link_to "削除", schedule_path(schedule), method: :delete, data: { confirm: "予定を削除しますか？" } %>
+            <%= link_to "削除", schedule_path(schedule), method: :delete, data: { confirm: "予定を削除しますか？" }, class: "non-decoration" %>
           </td>
         </tr>
       <% end %>
