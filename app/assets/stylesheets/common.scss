@@ -2,11 +2,13 @@ table th {
   background-color: #008080;
   padding: 10px 20px;
   color: #fff;
+  font-size: 26px;
 }
 
 table td {
   background-color: #d3d3d3;
   padding: 10px 20px;
+  font-size: 20px;
 }
 
 .notice {
@@ -14,3 +16,8 @@ table td {
   background-color: #afeeee;
   padding: 5px;
 } 
+
+.schedule-title {
+  width: fit-content;
+  border-bottom: solid 5px #008080;
+}

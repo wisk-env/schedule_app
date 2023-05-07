@@ -1,4 +1,8 @@
-<h3>スケジュール詳細</h3>
+<h1>スケジュール詳細</h1>
+
+<%= link_to "← 一覧に戻る", schedules_path %>
+<h2 class="schedule-title"><%= "タイトル : " + @schedule.title %></h2>
+<%= link_to "編集", edit_schedule_path(@schedule) %>
 
 <table>
   <tr>
@@ -18,5 +22,3 @@
     <td><%= @schedule.memo %></td>
   </tr>
 </table>
-
-<%= link_to "← 一覧に戻る", schedules_path %>
