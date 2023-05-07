@@ -13,6 +13,7 @@
       <th>終了日</th>
       <th>終日</th>
       <th>更新日時</th>
+      <th></th>
     </tr>
   </thead>
 
@@ -25,6 +26,9 @@
         <td><%= schedule.end_date.strftime("%Y/%m/%d") %></td>
         <td><%= schedule.all_day %></td>
         <td><%= schedule.updated_at.strftime("%Y/%m/%d %H:%M") %></td>
+        <td>
+          <%= link_to "詳細", schedule_path(schedule) %>
+        </td>
       </tr>
     <% end %>
   </tbody>
