@@ -1,3 +1,6 @@
+table {
+  margin: 0 auto;
+}
 table th {
   background-color: #008080;
   padding: 10px 20px;
@@ -20,4 +23,18 @@ table td {
 .schedule-title {
   width: fit-content;
   border-bottom: solid 5px #008080;
+}
+
+.total_schedules {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.footer-container {
+  display: flex;
+  padding: 24px;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 600px;
+  margin: 0 auto;
 }

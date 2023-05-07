@@ -4,6 +4,8 @@
   <p class="notice"><%= flash[:notice] %></p>
 <% end %>
 
+<p><%= link_to "新規追加", new_schedule_path %></p>
+
 <table>
   <thead>
     <tr>
@@ -42,4 +44,11 @@
   </tbody>
 </table>
 
-<p><%= link_to "新規追加", new_schedule_path %></p>
+<div class="footer-container">
+  <p>
+    <%= "予定合計 " %>
+    <span class="total_schedules"><%= @schedules.count.to_s %></span>
+    <%= " 件" %>
+  </p>
+  <p><%= "本日の日付 : " + Date.today.strftime("%Y/%m/%d") %></p>
+</div>
