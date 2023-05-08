@@ -1,5 +1,5 @@
 <div class="schedule-create-container">   
-  <h1>予定を編集してください</h1>
+  <h1 class="edit-main-title">予定を編集してください</h1>
 
   <% if flash[:alert] %>
     <p class="alert"><%= flash[:alert] %></p>
@@ -34,8 +34,8 @@
       </tr>
     </table>
     <div class="form-container-button">
-      <%= link_to "キャンセル", schedules_path %>
-      <%= f.submit "保存" %>
+      <%= link_to "キャンセル", schedules_path, class: "btn btn-outline-secondary" %>
+      <%= f.submit "保存", class: "btn btn-primary" %>
     </div>
   <% end %>
 </div>
