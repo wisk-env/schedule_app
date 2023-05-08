@@ -1,7 +1,7 @@
 .header-bar {
   background-color: #000;
   color: #fff;
-  height: 50px;
+  height: 60px;
   margin-top: 0;
   text-align: center;
   padding: 5px 0;
@@ -19,6 +19,7 @@ body {
 table {
   margin: 0 auto;
 }
+
 table th {
   background-color: #008080;
   padding: 10px 20px;
@@ -53,6 +54,7 @@ table td {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  margin-top: 30px;
 }
 
 .schedule-title {
@@ -115,5 +117,9 @@ table td {
 }
 
 .non-decoration {
+  text-decoration: none;
+}
+
+.non-decoration:hover {
   text-decoration: none;
 }
