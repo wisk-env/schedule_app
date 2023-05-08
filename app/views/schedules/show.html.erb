@@ -1,10 +1,10 @@
 <div class="schedule-details-container">
   <h1>スケジュール詳細</h1>
   
-  <%= link_to "← 一覧に戻る", schedules_path, class: "non-decoration" %>
+  <%= link_to "← 一覧に戻る", schedules_path, class: "non-decoration back-to-index" %>
   <div class="main-title">
     <h2 class="schedule-title"><%= "タイトル : " + @schedule.title %></h2>
-    <%= link_to "編集", edit_schedule_path(@schedule) %>
+    <%= link_to "編集", edit_schedule_path(@schedule), class: "btn btn-primary" %>
   </div>
 
     <table>
