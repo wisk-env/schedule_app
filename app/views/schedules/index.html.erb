@@ -39,7 +39,10 @@
             <%= link_to "編集", edit_schedule_path(schedule), class: "non-decoration" %>
           </td>
           <td>
-            <%= link_to "削除", schedule_path(schedule), method: :delete, data: { confirm: "予定を削除しますか？" }, class: "non-decoration" %>
+            <%= link_to "削除", schedule_path(schedule), method: :delete, data:
+            { confirm: "「#{schedule.title}」を削除してよろしいですか？<br>この操作は取り消せません。",
+              cancel: "キャンセル",
+              commit: "削除" }, title: "予定を削除しますか？", class: "non-decoration" %>
           </td>
         </tr>
       <% end %>
